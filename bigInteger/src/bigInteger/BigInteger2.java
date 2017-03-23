@@ -4,7 +4,7 @@ package bigInteger;
 	
 
 public static String bigNumberSum(String num1, String num2) {  
-        // 最后的符号  
+        // 初始化结果的符号  
         char sign = '+';  
   
         char sign1 = num1.charAt(0);  
@@ -43,7 +43,7 @@ public static String bigNumberSum(String num1, String num2) {
         else{
         	len =length2+1;
         }
-       // int len = length1 > length2 ? length1 + 1 : length2 + 1;  
+       
         int[] result = new int[len];  
   
         
@@ -158,7 +158,7 @@ if(length1>length2){
     }
 public static void main(String[] args){
 	BigInteger2 b=new BigInteger2();
-	System.out.println(b.bigNumberSum("123", "321"));
+	System.out.println(b.bigNumberSum("12312454578", "321"));
 	
 }
 }
